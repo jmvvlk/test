@@ -1,86 +1,178 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
-header .container{
-    max-width: 1400px;
+html {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1170px;
     margin: 0 auto;
 }
-header .container h1{
-    font-size: 35px;
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0 ;
+    z-index: 10;
+    border-bottom: 1px solid #D9DBE9;
+    margin-bottom: 50px;
+}
+.header__top p{
     font-weight: 700;
+    font-size: 34px;
+    line-height: 160%;
     color: #5F2EEA;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header .container{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 50px;
+.header__top img{
+    width: 28px;
+    height: 18px;
+    margin-top: 20px;
+   
 }
-.right_logo{
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-}
-.logo{
-    width: 30px;
-    height: 4px;
-    background: #5F2EEA;
-    border-radius: 5px;
-}
-.point{
-    width: 1400px;
-    height: 1px;
-    background: #5F2EEA80;
-}
-.banner1{ 
-    display: flex;
-    justify-content: space-between;
-}
-.sect1{
-    display: flex;
-    align-items: center;
-}
-.sect1 h1{
+.section__top h1{
+    width: 600px;
+    font-weight: 700;
     font-size: 64px;
-    font-weight: 700;
-    color: rgba(78, 75, 102, 1);
-    text-align: start;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 300px;
-    left: 50px;
-    width: 610px;
-}
-.sect2 img{
-    width: 1090px;
-    height: 700px;
-}
-.but{
-    display: flex;
-    position: absolute;
-    left: 50px;
-    top: 500px
-}
-.but .but1{
-    width: 240px;
-    height: 60px;
-    color: white;
-    background: #5F2EEA;
-    border: none;
-    border-radius: 30px;
-    margin-right: 20px;
-}
-.but .but2{
-    width: 240px;
-    height: 60px;
-    color: #5F2EEA;
-    border: 2px solid #5F2EEA;
-    border-radius: 30px;
-    font-weight: 700;
+    line-height: 103%;
+    letter-spacing: 0.02em;
+    color: #4E4B66;
+    margin-top: 200px;
+    
+
 }
 
+
+.purpel{
+    width: 243px;
+    height: 64px;
+    color: white;
+    background: #5F2EEA;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.white{
+    
+     width: 243px;
+    height: 64px;
+    color: #5F2EEA;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid #5F2EEA;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 175%;
+            letter-spacing: 0.05em;
+            text-align: center;
+            margin-top: 30px;
+            position: absolute;
+            margin-left: 25px;
+    
+}
+.fon{
+    background: url('./img/Boarding.png') center/cover no-repeat;
+    position: relative;
+    left: 320px;
+    width: 1090px;
+    height: 700px;
+    top: -428px;
+    z-index: -2;
+}
+.table{
+    height: 200px;
+    border: 1px solid  #D9DBE9;
+    margin-top: -430px;
+    
+}
+.table .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+   
+    
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: start;
+    border: 1px solid #D9DBE9 ;
+    width: 1046px;
+ 
+
+}
+.top{
+    width: 109px;
+    color: #2A00A2;
+    font-weight: 700;
+        font-size: 32px;
+        line-height: 106%;
+        letter-spacing: 0.03em;
+        
+        
+}
+
+.bottom{
+    width: 245px;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.05em;
+        color:#6E7191
+}
+.earth {
+    position: relative;
+    text-align: left;
+    
+}
+.earth::after{
+    content: '';
+    width: 37.04px;
+    height: 37px;
+    background: url('./img/GlobeHemisphereEast.png') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -70px;
+}
+.air {
+    position: relative;
+    text-align: left;
+}
+.air::after {
+    content: '';
+    width: 37.04px;
+    height: 37px;
+    background: url('./img/AirplaneTilt.png') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    
+}
+.bike {
+    position: relative;
+    text-align: left;
+}
+
+.bike::after {
+    content: '';
+    width: 37.04px;
+    height: 37px;
+    background: url('./img/Bicycle.png') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -70px;
+}
 
 
 
